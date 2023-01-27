@@ -5,10 +5,11 @@ def senti_analysis(sentence, examples, api_key):
     openai.api_key = api_key
     description = "The following is a list of sentences and the emotions they have:\n\n"
     description_and_example = description
-    interface = "\nEmotion:"
+    interface_sen = "sentence: "
+    interface_tag = "\nEmotion: "
     for i in range(len(examples)):
         description_and_example = description_and_example + examples[i]
-    prompt = description_and_example + sentence + interface
+    prompt = description_and_example + interface_sen + sentence + interface_tag
 
     response = openai.Completion.create(
       model="text-davinci-003",
