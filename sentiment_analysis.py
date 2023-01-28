@@ -26,8 +26,10 @@ def senti_analysis(sentence, examples, api_key):
 
 
 if __name__ == "__main__":
-    sentence = "I really love to watch movies in cinema"
+    #sentence = "I really love to watch movies in cinema"
+    sentence = "your-sentence"
 
+    #add your examples
     example_positive = "Sentence: I am feeling so good watching a movie.\nEmotion: Positive\n\n"
     example_neutral = "Sentence: I want to watch movies in my leisure time.\nEmotion: Neutral\n\n"
     example_negative = "Sentence: I think watching movies is a waste of time.\nEmotion: Negative\n\n"

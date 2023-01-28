@@ -26,10 +26,12 @@ def paraphrase(sentence, examples, api_key):
 
 
 if __name__ == "__main__":
-    sentence = "The history of Western scholarship shows that science is a derivative of philosophy."
+    #sentence = "The history of Western scholarship shows that science is a derivative of philosophy."
+    sentence = "your-sentence"
 
     example_1 = "Sentence: The need for investors to earn a commercial return may put upward pressure on prices.\nParaphrase: The need for profit is likely to push up prices.\n\n"
     example_2 = "Sentence: What should I learn to become a data scientist?\nParaphrase: How can I start learning data science?\n\n"
+    #add your examples
     examples = []
     examples.append(example_1)
     examples.append(example_2)
